@@ -13,8 +13,8 @@ export default function Document() {
         {/* google translate breaks react:
           - https://github.com/facebook/react/issues/11538
           - https://bugs.chromium.org/p/chromium/issues/detail?id=872770 */}
-        <meta name="google" content="notranslate" />
-        <link rel="icon" href="../images/favicon.ico" />
+        <meta content="notranslate" name="google" />
+        <link href="../images/favicon.ico" rel="icon" />
       </Head>
       <body className="bg-black">
         <Main />

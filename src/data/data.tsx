@@ -82,7 +82,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://docs.google.com/presentation/d/1NnHaAdovgTMB78tLX2xhuNzlhzH2IJQ_/edit#slide=id.p1',
+      href: 'https://drive.google.com/file/d/1ZFLsnWf_pPl5sG2DniTdyyHkKZq3tdPs/view',
       text: 'Lighting Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -261,7 +261,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '2021 - Present',
+    date: '2022 - Present',
     location: 'Newtown Arts Company',
     title: 'Tech',
     content: (

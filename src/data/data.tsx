@@ -248,6 +248,7 @@ export const education: TimelineItem[] = [
     date: 'June 2024',
     location: 'Council Rock High School South',
     title: 'High School Diploma',
+    content: <p> </p>,
   },
   {
     date: 'September 2024 - June 2028',

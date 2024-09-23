@@ -82,8 +82,8 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '../assets/Lighting_resume.pdf',
+      text: 'Lighting Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -116,15 +116,6 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      }
-    ],
-  },
   {
     name: 'Frontend development',
     skills: [
@@ -253,7 +244,7 @@ export const education: TimelineItem[] = [
     date: 'September 2024 - June 2028',
     location: 'Arcadia University',
     title: 'Bachelor of Science in Computer Science',
-    content: <p>Expected graduation date is 2028</p>,
+    content: <p>Expected graduation date is 2028. I was a also the recipiant of the <a href="https://www.arcadia.edu/arcadia-university-admissions/financial-aid/aid-for-undergraduates/">Distinguished Presidential Scholarship</a> from Arcadia University</p>,
   },
 ];
 

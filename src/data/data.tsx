@@ -322,8 +322,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.LinkedIn,
-      text: 'Tim Baker',
-      href: 'https://www.linkedin.com/in/timbakerx/',
+      text: 'TODO',
+      href: 'https://www.linkedin.com/in/TODO/',
     },
     {
       type: ContactType.Github,

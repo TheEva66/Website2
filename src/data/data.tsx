@@ -82,10 +82,10 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '../assets/Lighting_resume.pdf',
+      href: 'https://docs.google.com/presentation/d/1NnHaAdovgTMB78tLX2xhuNzlhzH2IJQ_/edit#slide=id.p1',
       text: 'Lighting Resume',
       primary: true,
-      Icon: ArrowDownTrayIcon,
+      Icon: SparklesIcon,
     },
     {
       href: `#${SectionId.Contact}`,

@@ -1,4 +1,4 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
+import { FC, memo, useCallback, useMemo, useState } from 'react';
 
 interface FormData {
   name: string;
@@ -20,11 +20,9 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const {name, value} = event.target;
-
-      const fieldData: Partial<FormData> = {[name]: value};
-
-      setData({...data, ...fieldData});
+      const { name, value } = event.target;
+      const fieldData: Partial<FormData> = { [name]: value };
+      setData({ ...data, ...fieldData });
     },
     [data],
   );
@@ -32,12 +30,33 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+
+      // Replace this URL with your actual Discord Webhook URL
+      const webhookURL = "https://discord.com/api/webhooks/1287839990268559361/YMnf4LquRHpw5it96vgFUKmBDUeuW9FoaVPHj9PprduxIAFD8z8yauSxapoP3YsxPa_3";
+
+      try {
+        const response = await fetch(webhookURL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            content: `**Name:** ${data.name}\n**Email:** ${data.email}\n**Message:** ${data.message}`,
+          }),
+        });
+
+        if (response.ok) {
+          console.log('Message sent successfully');
+          // Optionally reset the form data after successful submission
+          setData(defaultData);
+        } else {
+          console.error('Failed to send message', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
     },
-    [data],
+    [data, defaultData],
   );
 
   const inputClasses =
@@ -45,7 +64,7 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
       <input
         autoComplete="email"
         className={inputClasses}
@@ -54,6 +73,7 @@ const ContactForm: FC = memo(() => {
         placeholder="Email"
         required
         type="email"
+        value={data.email}
       />
       <textarea
         className={inputClasses}
@@ -63,6 +83,7 @@ const ContactForm: FC = memo(() => {
         placeholder="Message"
         required
         rows={6}
+        value={data.message}
       />
       <button
         aria-label="Submit contact form"

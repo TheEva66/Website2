@@ -85,7 +85,7 @@ export const heroData: Hero = {
       href: 'https://docs.google.com/presentation/d/1NnHaAdovgTMB78tLX2xhuNzlhzH2IJQ_/edit#slide=id.p1',
       text: 'Lighting Resume',
       primary: true,
-      Icon: SparklesIcon,
+      Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,

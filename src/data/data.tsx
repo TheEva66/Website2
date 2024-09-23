@@ -84,7 +84,7 @@ export const heroData: Hero = {
     {
       href: 'https://drive.google.com/file/d/1ZFLsnWf_pPl5sG2DniTdyyHkKZq3tdPs/view',
       text: 'Lighting Resume',
-      primary: false,
+      primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {

@@ -66,7 +66,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Eva Akselrad AND ALEX IS A TURD SANDWICH`,
+  name: `I'm Eva Akselrad`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -100,9 +100,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am an excentric individual who loves to learn new things. I am currently studying computer science at Arcadia University with a focus on cybersecurity. I am also the lead lighting designer at Pulse Entertainment. I have a passion for lighting design and have worked on many productions with Newtown Arts Company. I taught myself Unreal Engine and have created a few projects with it. I am always looking for new opportunities to learn and grow.`,
   aboutItems: [
     {label: 'Location', text: 'Richboro PA', Icon: MapIcon},
     {label: 'Age', text: '18', Icon: CalendarIcon},
@@ -304,7 +302,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Contact me for any inquiries or opportunities. I am always looking for new opportunities to learn and grow.',
   items: [
     {
       type: ContactType.Email,

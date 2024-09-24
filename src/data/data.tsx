@@ -266,7 +266,7 @@ export const experience: TimelineItem[] = [
       <p>
         I worked for Newtown Arts Company on many productions and was responsable for 
         the lighting, sound, spotlight, projections and many other technical aspects of the show.
-        I was the recipiant of the TODO ADD NAME legacy scholarship.
+        I was the recipiant of the TODO ADD NAME legacy scholarship. My next show is<a href="https://newtownac.booktix.com/dept/Main/e/TC"> The Crucible</a> In October 2024. I will be running the sound board for this show, aswell as learing the new recently renovated lighting system.
       </p>
     ),
   },

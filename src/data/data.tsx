@@ -254,7 +254,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         I worked for Pulse Entertainment to design and implement lighting for various events. I was responsible for light 
-        fixture locations aswell as the programming of the lights. I also worked with the sound team to ensure that the lighting and sound were in sync.
+        fixture locations as well as the programming of the lights. I also worked with the sound team to ensure that the lighting and sound were in sync.
       </p>
     ),
   },

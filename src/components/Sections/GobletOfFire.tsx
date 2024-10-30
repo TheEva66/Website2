@@ -1,4 +1,5 @@
 import { FC, memo, useState } from 'react';
+import Link from 'next/link';
 import ContactForm from './gob';
 
 const GobletOfFire: FC = memo(() => {

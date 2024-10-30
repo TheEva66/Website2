@@ -22,12 +22,12 @@ const QRPage: React.FC = () => {
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: 'column' as 'column',
+    flexDirection: 'column',  // Remove 'as' type assertion
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
     fontFamily: 'Arial, sans-serif',
-  },
+  } as React.CSSProperties,  // Add type annotation here instead of using 'as' directly
   image: {
     width: '200px',
     height: '200px',

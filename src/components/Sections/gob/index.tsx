@@ -17,7 +17,10 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
   [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
   [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
+  [ContactType.Github]: {Icon: () => null, srLabel: 'Github'}, // Placeholder
+  [ContactType.LinkedIn]: {Icon: () => null, srLabel: 'LinkedIn'} // Placeholder
 };
+
 
 const Contact: FC = memo(() => {
   const {headerText, items} = contact;

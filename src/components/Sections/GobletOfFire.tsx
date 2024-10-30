@@ -124,23 +124,64 @@ const GobletOfFire: FC = memo(() => {
 
         {/* School Links */}
         <div style={{
-          marginTop: '3rem',
-          display: 'flex',
-          justifyContent: 'center',
-          gap: '2rem',
-          fontSize: '1.2rem',
-          color: '#f0f0f0'
-                }}>
-          <Link href="/durmstrang">
-            <a style={{ color: '#ff4500', textShadow: '0 0 5px #ff4500' }}>Durmstrang Institute</a>
-          </Link>
-          <Link href="/hogwarts">
-            <a style={{ color: '#ffd700', textShadow: '0 0 5px #ffd700' }}>Hogwarts</a>
-          </Link>
-          <Link href="/beauxbatons">
-            <a style={{ color: '#5d9cec', textShadow: '0 0 5px #5d9cec' }}>Beauxbatons Academy</a>
-          </Link>
+        marginTop: '3rem',
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '2rem',
+        fontSize: '1.2rem',
+        }}>
+        <Link href="/durmstrang">
+            <a style={{
+            backgroundColor: '#ff4500',
+            color: '#ffffff',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+            textDecoration: 'none',
+            transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#cc3700'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff4500'}
+            >
+            Durmstrang Institute
+            </a>
+        </Link>
+
+        <Link href="/hogwarts">
+            <a style={{
+            backgroundColor: '#ffd700',
+            color: '#ffffff',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+            textDecoration: 'none',
+            transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#cca600'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ffd700'}
+            >
+            Hogwarts
+            </a>
+        </Link>
+
+        <Link href="/beauxbatons">
+            <a style={{
+            backgroundColor: '#5d9cec',
+            color: '#ffffff',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+            textDecoration: 'none',
+            transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#4a80c4'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5d9cec'}
+            >
+            Beauxbatons Academy
+            </a>
+        </Link>
         </div>
+
 
         {/* Modal */}
         {isModalOpen && (

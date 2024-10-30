@@ -1,5 +1,5 @@
 import { FC, memo, useState } from 'react';
-import ContactForm from '../components/Sections/Contact';
+import ContactForm from '../Contact';
 
 const GobletOfFire: FC = memo(() => {
   const [isModalOpen, setModalOpen] = useState(false);

@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
-const GobletOfFire: FC = () => {
+const GobletOfFire: FC = memo(() => {
   return (
     <section style={{ padding: '4rem 2rem', backgroundColor: '#1a1a1a', color: '#f0f0f0', textAlign: 'center' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -41,6 +41,6 @@ const GobletOfFire: FC = () => {
       </div>
     </section>
   );
-};
+});
 
 export default GobletOfFire;

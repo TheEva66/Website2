@@ -30,7 +30,18 @@ const Hogwarts: FC = () => {
           textShadow: '0 0 8px rgba(0,0,0,0.8)',
         }}>
           Hogwarts, home to many legendary witches and wizards, prepares its champions with skills in both 
-          magic and courage. The champions who represent Hogwarts carry the legacy of its illustrious past.
+          magic and courage. This year, Hogwarts is honored to host the prestigious Triwizard Tournament.
+        </p>
+
+        <p style={{
+          fontSize: '1.2rem',
+          lineHeight: '1.6',
+          marginTop: '1.5rem',
+          color: '#e0e0e0',
+        }}>
+          Hosting this event is a profound privilege and responsibility. The entire castle is abuzz with excitement, 
+          preparing to welcome champions from all over Europe. From the enchanted decorations in the Great Hall to the 
+          enhanced security measures around the castle, Hogwarts is making history as the official host of the Triwizard Tournament.
         </p>
       </div>
     </section>

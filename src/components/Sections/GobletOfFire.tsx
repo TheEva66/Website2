@@ -180,6 +180,22 @@ const GobletOfFire: FC = memo(() => {
             Beauxbatons Academy
             </a>
         </Link>
+        <Link href="/qr">
+            <a style={{
+            backgroundColor: '#ffffff',
+            color: '#000000',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+            textDecoration: 'none',
+            transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#4a80c4'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#5d9cec'}
+            >
+            QR CODE
+            </a>
+        </Link>
         </div>
 
 

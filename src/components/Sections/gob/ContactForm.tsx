@@ -72,6 +72,7 @@ const ContactForm: FC = memo(() => {
         onChange={onChange}
         placeholder="Year"
         required
+        type ="number"
         value={data.email}
       />
       <textarea
@@ -80,7 +81,6 @@ const ContactForm: FC = memo(() => {
         name="message"
         onChange={onChange}
         placeholder="Message"
-        required
         rows={6}
         value={data.message}
       />

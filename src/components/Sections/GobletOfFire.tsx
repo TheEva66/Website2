@@ -1,6 +1,13 @@
-import {FC, memo} from 'react';
+import { FC, memo, useState } from 'react';
+import ContactForm from '../components/Sections/Contact';
 
 const GobletOfFire: FC = memo(() => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
   return (
     <section style={{padding: '4rem 2rem', backgroundColor: '#1a1a1a', color: '#f0f0f0', textAlign: 'center'}}>
       <div style={{maxWidth: '800px', margin: '0 auto'}}>
@@ -15,29 +22,48 @@ const GobletOfFire: FC = memo(() => {
           witches and wizards will be chosen—do you have what it takes?
         </p>
         
-        {/* Triwizard Tournament Information */}
-        <div style={{marginTop: '2rem', textAlign: 'left'}}>
-          <h3 style={{fontSize: '2rem', marginBottom: '1rem', color: '#c5a352'}}>Triwizard Tournament Details</h3>
-          <ul style={{listStyle: 'none', padding: 0, lineHeight: '1.8'}}>
-            <li>🏆 <strong>Champions:</strong> One student from each participating school</li>
-            <li>🔥 <strong>Challenges:</strong> A series of deadly and magical tasks</li>
-            <li>🎉 <strong>Reward:</strong> Eternal glory and the Triwizard Cup</li>
-          </ul>
-        </div>
-        
         {/* Call to Action */}
         <div style={{marginTop: '2rem'}}>
-          <button style={{padding: '0.75rem 1.5rem', fontSize: '1rem', backgroundColor: '#c5a352', color: '#1a1a1a', border: 'none', cursor: 'pointer'}}>
+          <button
+            onClick={toggleModal}
+            style={{
+              padding: '0.75rem 1.5rem',
+              fontSize: '1rem',
+              backgroundColor: '#c5a352',
+              color: '#1a1a1a',
+              border: 'none',
+              cursor: 'pointer',
+            }}>
             Enter Your Name in the Goblet
           </button>
         </div>
-        
-        {/* Fun Facts or Additional Info */}
-        <div style={{marginTop: '2rem', fontStyle: 'italic', color: '#cccccc'}}>
-          <p>
-            Fun Fact: The Goblet of Fire has been known to make its own decisions, occasionally causing surprises among the contestants.
-          </p>
-        </div>
+
+        {/* Modal */}
+        {isModalOpen && (
+          <div style={{
+            position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000
+          }}>
+            <div style={{backgroundColor: '#2c2c2c', padding: '2rem', borderRadius: '8px', width: '100%', maxWidth: '500px'}}>
+              <h3 style={{color: '#f0f0f0', marginBottom: '1rem'}}>Submit Your Entry</h3>
+              <ContactForm />
+              <button
+                onClick={toggleModal}
+                style={{
+                  marginTop: '1rem',
+                  padding: '0.5rem 1rem',
+                  fontSize: '0.9rem',
+                  backgroundColor: '#c5a352',
+                  color: '#1a1a1a',
+                  border: 'none',
+                  cursor: 'pointer',
+                  borderRadius: '4px'
+                }}>
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

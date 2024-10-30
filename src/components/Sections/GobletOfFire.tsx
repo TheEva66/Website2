@@ -78,6 +78,49 @@ const GobletOfFire: FC = memo(() => {
           </button>
         </div>
 
+        {/* Schedule Section */}
+        <div style={{
+          marginTop: '4rem',
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
+          padding: '2rem',
+          borderRadius: '12px',
+          color: '#ffd700',
+          textShadow: '0 0 8px #ffd700',
+          fontSize: '1.2rem',
+          lineHeight: '1.8',
+        }}>
+          <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Tournament Schedule</h3>
+          <p><strong>Opening Ceremony:</strong> November 1st, 7:00 PM - Great Hall</p>
+          <p><strong>First Task:</strong> November 10th, 2:00 PM - Forbidden Forest Arena</p>
+          <p><strong>Yule Ball:</strong> November 24th, 8:00 PM - The Great Hall</p>
+          <p><strong>Second Task:</strong> November 30th, 3:00 PM - Black Lake</p>
+          <p><strong>Final Task:</strong> December 7th, 1:00 PM - The Maze</p>
+          <p><em>May the bravest champions emerge victorious!</em></p>
+        </div>
+
+        {/* Dumbledore's Speech */}
+        <div style={{
+          marginTop: '4rem',
+          padding: '2rem',
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          borderRadius: '12px',
+          color: '#f0f0f0',
+          fontSize: '1.1rem',
+          fontStyle: 'italic',
+          textShadow: '0 0 6px rgba(0, 0, 0, 0.8)',
+        }}>
+          <h3 style={{ fontSize: '1.8rem', color: '#ffd700', marginBottom: '1rem', textShadow: '0 0 8px #ffd700' }}>
+            Professor Dumbledore's Opening Speech
+          </h3>
+          <p>
+            “Eternal glory! That is what awaits the student who wins the Triwizard Tournament, 
+            but to do this, that student must survive three tasks. Three extremely dangerous tasks. 
+            For this reason, the Ministry has seen fit to impose a new rule: only students who are 
+            of age—that is to say, seventeen years or older—will be allowed to put forward their 
+            names for consideration. This decision is final.”
+          </p>
+        </div>
+
         {/* Modal */}
         {isModalOpen && (
           <div style={{

@@ -10,12 +10,17 @@ import Portfolio from '../components/Sections/Portfolio';
 import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
 import {homePageMeta} from '../data/data';
+import GobletOfFire from '../components/Sections/GobletOfFire';
 
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
 
+import { useRouter } from 'next/router';
+
 const Home: FC = memo(() => {
-  const {title, description} = homePageMeta;
+  const { title, description } = homePageMeta;
+  const router = useRouter();
+
   return (
     <Page description={description} title={title}>
       <Header />
@@ -25,9 +30,11 @@ const Home: FC = memo(() => {
       <Portfolio />
       <Testimonials />
       <Contact />
+      {router.pathname === '/fy103' && <GobletOfFire />}
       <Footer />
     </Page>
   );
 });
+
 
 export default Home;

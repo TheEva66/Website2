@@ -118,7 +118,7 @@ const GobletOfFire: FC = memo(() => {
           <br /><br />
           On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>Halloween</span>, an impartial judge will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons</span>. Only students of age—17 or older—are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
         </p>
-
+        </div>
 
         {/* School Links */}
         <div style={{

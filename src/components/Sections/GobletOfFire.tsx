@@ -110,13 +110,15 @@ const GobletOfFire: FC = memo(() => {
           fontStyle: 'italic',
           textShadow: '0 0 6px rgba(0, 0, 0, 0.8)',
         }}>
-          <h3 style={{ fontSize: '1.8rem', color: '#ffd700', marginBottom: '1rem', textShadow: '0 0 8px #ffd700' }}>
-            Professor Dumbledore's Opening Speech
-          </h3>
-          <p>
-            "the Triwizard Tournament… well, some of you will not know what this tournament involves, so I hope those who do know will forgive me for giving a short explanation, and allow their attention to wander freely. The Triwizard Tournament was first established some seven hundred years ago, as a friendly competition between the three largest European schools of wizardry – Hogwarts, Beauxbatons, and Durmstrang. A champion was selected to represent each school, and the three champions competed in three magical tasks. The schools took it in turns to host the Tournament once every five years and it was generally agreed to be the a most excellent way of establishing ties between young witch’s and wizards of different nationalities – until, that is, the death toll mounted so high that the Tournament was discontinued. There have been several attempts over the centuries to reinstate the Tournament,” Dumbledore continued, “none of which have been very successful. However, our own Departments of International Magical Co-Operation and Magical Games and Sports have decided the time is ripe for another attempt. We have worked hard over the summer to ensure that, this time, no champion will find himself or herself in mortal danger. The Heads of Beauxbatons and Durmstrang have already arrived, and on Halloween we will have the Champion Selections. An impartial judge will decide which students, are most worthy to compete for the Triwizard Cup, the glory of their school and a thousand galleon personal prize money. “Eager though I know all of you will be able to bring the Triwizard Cup to Hogwarts,” he said, “the heads of the participating schools, along with the Ministry of Magic, have agreed to impose an agreed restriction on contenders this year. Only students who are of age – that is to say, seventeen years or older – will be allowed to put forward their names for consideration. This is a measure we feel is necessary, given that the Tournament tasks will still be difficult and dangerous, whatever precautions we take, and it is highly unlikely that students below Sixth and Seventh year will be able to cope with them. I will personally be ensuring that no underage student hoodwinks our impartial judge into making them Hogwarts champion. I therefore beg you not to waste your time submitting yourself if you are under seventeen, The delegations from Beauxbatons and Durmstrang will be staying with us for the greater part of this year. I know that you will all extend every courtesy to our foreign guests while they are with us, and will give your whole-hearted support to the Hogwarts champion when he or she is selected. And now, it is late, and I know how important it is to you all to be alert and rested as you enter you lessons tomorrow morning."
-          </p>
-        </div>
+         <h3 style={{ fontSize: '1.8rem', color: '#ffd700', marginBottom: '1rem', textShadow: '0 0 8px #ffd700' }}>
+          What is the Triwizard Tournament?
+        </h3>
+        <p style={{ lineHeight: '1.5', fontSize: '1rem', color: '#f5e5c0' }}>
+          "The Triwizard Tournament was created 700 years ago to strengthen bonds between <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Hogwarts, Beauxbatons,</span> and <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Durmstrang</span>. Each school selects a champion to compete in three magical tasks. After many failed attempts to revive the tournament due to high risk, our Ministries have finally ensured safety measures. 
+          <br /><br />
+          On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>Halloween</span>, an impartial judge will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons</span>. Only students of age—17 or older—are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
+        </p>
+
 
         {/* School Links */}
         <div style={{

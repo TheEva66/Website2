@@ -24,7 +24,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
 };
 
 const Contact: FC = memo(() => {
-  const {headerText, description, items} = contact;
+  const {headerText, items} = contact;
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6">
@@ -37,15 +37,7 @@ const Contact: FC = memo(() => {
             <ContactForm />
           </div>
           <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2">
-            <p className="prose leading-6 text-neutral-300">  <p><strong>Do you dare enter?</strong></p>
-  <p>
-    The Goblet awaits those brave enough to submit their name. 
-    Remember, once chosen, there’s no turning back. Are you ready to embark 
-    on the path to eternal glory?
-  </p>
-  <p style="font-style: italic;">
-    "For those who are chosen, destiny awaits. Will you be the one?"
-  </p></p>
+            <p className="prose leading-6 text-neutral-300">  Dare to enter the Goblet of Fire, where the brave seek glory and face trials that reveal their destiny—will you be chosen? </p>
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
               {items.map(({type, text, href}) => {
                 const {Icon, srLabel} = ContactValueMap[type];

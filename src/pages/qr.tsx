@@ -13,7 +13,7 @@ const QRPage: React.FC = () => {
         style={styles.image}
       />
       <button style={styles.button} onClick={handleButtonClick}>
-        Go to the Link
+        Start The Show!
       </button>
     </div>
   );

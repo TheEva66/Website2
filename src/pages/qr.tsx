@@ -8,7 +8,7 @@ const QRPage: React.FC = () => {
   return (
     <div style={styles.container}>
       <img
-        src="/images/fy103-qr.png"
+        src="/images/qr.png"
         alt="FY103 QR Code"
         style={styles.image}
       />

@@ -4,7 +4,6 @@ const Hogwarts: FC = () => {
   return (
     <section style={{
       padding: '4rem 2rem',
-      backgroundImage: 'url(/images/hogwarts.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: '#f0f0f0',
@@ -44,6 +43,24 @@ const Hogwarts: FC = () => {
           enhanced security measures around the castle, Hogwarts is making history as the official host of the Triwizard Tournament.
         </p>
       </div>
+      {/* Back to FY103 Button */}
+      <div style={{ marginTop: '3rem' }}>
+          <Link href="/fy103">
+            <a style={{
+              backgroundColor: '#ff4500',
+              color: '#ffffff',
+              padding: '0.5rem 1rem',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              transition: 'background-color 0.3s ease',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#cc3700'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ff4500'}>
+              Back to FY103
+            </a>
+          </Link>
+        </div>
     </section>
   );
 };

@@ -29,7 +29,7 @@ const GobletOfFire: FC = memo(() => {
           color: '#ffd700',
           textShadow: '0 0 10px #ffd700, 0 0 20px #ffd700',
         }}>
-          The Goblet of Fire
+          The Triwizard Tournament
         </h2>
         
         {/* Brief Intro */}
@@ -41,9 +41,9 @@ const GobletOfFire: FC = memo(() => {
           fontStyle: 'italic',
           textShadow: '0 0 8px rgba(0,0,0,0.8)',
         }}>
-          Welcome, brave witch or wizard, to the official page of the Goblet of Fire. This ancient magical artifact 
+          Welcome, brave witch or wizard, to the Triwizard Tournament. This ancient magical artifact 
           holds the power to choose the champions for the Triwizard Tournament. Only those with the courage to face 
-          the unknown may submit their names. Do you have the bravery, strength, and determination it takes?
+          the unknown and are 17+ may submit their names. Do you have the bravery, strength, and determination it takes?
         </p>
 
         <p style={{
@@ -94,7 +94,7 @@ const GobletOfFire: FC = memo(() => {
           <p><strong>Opening Ceremony:</strong> November 1st, 7:00 PM - Great Hall</p>
           <p><strong>First Task:</strong> November 10th, 2:00 PM - Forbidden Forest Arena</p>
           <p><strong>Yule Ball:</strong> November 24th, 8:00 PM - The Great Hall</p>
-          <p><strong>Second Task:</strong> November 30th, 3:00 PM - Black Lake</p>
+          <p><strong>Second Task:</strong> November 30th, 3:00 PM - TBD</p>
           <p><strong>Final Task:</strong> December 7th, 1:00 PM - The Maze</p>
           <p><em>May the bravest champions emerge victorious!</em></p>
         </div>
@@ -114,11 +114,7 @@ const GobletOfFire: FC = memo(() => {
             Professor Dumbledore's Opening Speech
           </h3>
           <p>
-            “Eternal glory! That is what awaits the student who wins the Triwizard Tournament, 
-            but to do this, that student must survive three tasks. Three extremely dangerous tasks. 
-            For this reason, the Ministry has seen fit to impose a new rule: only students who are 
-            of age—that is to say, seventeen years or older—will be allowed to put forward their 
-            names for consideration. This decision is final.”
+            "the Triwizard Tournament… well, some of you will not know what this tournament involves, so I hope those who do know will forgive me for giving a short explanation, and allow their attention to wander freely. The Triwizard Tournament was first established some seven hundred years ago, as a friendly competition between the three largest European schools of wizardry – Hogwarts, Beauxbatons, and Durmstrang. A champion was selected to represent each school, and the three champions competed in three magical tasks. The schools took it in turns to host the Tournament once every five years and it was generally agreed to be the a most excellent way of establishing ties between young witch’s and wizards of different nationalities – until, that is, the death toll mounted so high that the Tournament was discontinued. There have been several attempts over the centuries to reinstate the Tournament,” Dumbledore continued, “none of which have been very successful. However, our own Departments of International Magical Co-Operation and Magical Games and Sports have decided the time is ripe for another attempt. We have worked hard over the summer to ensure that, this time, no champion will find himself or herself in mortal danger. The Heads of Beauxbatons and Durmstrang have already arrived, and on Halloween we will have the Champion Selections. An impartial judge will decide which students, are most worthy to compete for the Triwizard Cup, the glory of their school and a thousand galleon personal prize money. “Eager though I know all of you will be able to bring the Triwizard Cup to Hogwarts,” he said, “the heads of the participating schools, along with the Ministry of Magic, have agreed to impose an agreed restriction on contenders this year. Only students who are of age – that is to say, seventeen years or older – will be allowed to put forward their names for consideration. This is a measure we feel is necessary, given that the Tournament tasks will still be difficult and dangerous, whatever precautions we take, and it is highly unlikely that students below Sixth and Seventh year will be able to cope with them. I will personally be ensuring that no underage student hoodwinks our impartial judge into making them Hogwarts champion. I therefore beg you not to waste your time submitting yourself if you are under seventeen, The delegations from Beauxbatons and Durmstrang will be staying with us for the greater part of this year. I know that you will all extend every courtesy to our foreign guests while they are with us, and will give your whole-hearted support to the Hogwarts champion when he or she is selected. And now, it is late, and I know how important it is to you all to be alert and rested as you enter you lessons tomorrow morning."
           </p>
         </div>
 

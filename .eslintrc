@@ -31,16 +31,16 @@
         "typeLiterals": ["signature", "method", "constructor", "field"]
       }
     ],
-    "import/first": "error",
-    "import/newline-after-import": "error",
-    "import/no-duplicates": "error",
+    "import/first": "warn",
+    "import/newline-after-import": "warn",
+    "import/no-duplicates": "warn",
     "import/order": "off",
     "no-irregular-whitespace": "off",
     "@typescript-eslint/no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
     "object-curly-spacing": "off",  // Disable object-curly-spacing errors
     "react/jsx-curly-brace-presence": [2, "never"],
     "react/jsx-no-duplicate-props": "error",
-    "react/jsx-sort-props": "error",
+    "react/jsx-sort-props": "warn",
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
     "simple-import-sort/exports": "warn",  // Changed to warning

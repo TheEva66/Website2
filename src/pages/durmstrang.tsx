@@ -4,7 +4,7 @@ const Durmstrang: FC = () => {
   return (
     <section style={{
       padding: '4rem 2rem',
-      backgroundImage: 'url(/images/durmstrang.jpg)',
+      backgroundImage: 'url(/images/durm.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       color: '#f0f0f0',

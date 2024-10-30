@@ -121,6 +121,26 @@ const GobletOfFire: FC = memo(() => {
           </p>
         </div>
 
+        {/* School Links */}
+        <div style={{
+          marginTop: '3rem',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '2rem',
+          fontSize: '1.2rem',
+          color: '#f0f0f0'
+                }}>
+          <Link href="/durmstrang">
+            <a style={{ color: '#ff4500', textShadow: '0 0 5px #ff4500' }}>Durmstrang Institute</a>
+          </Link>
+          <Link href="/hogwarts">
+            <a style={{ color: '#ffd700', textShadow: '0 0 5px #ffd700' }}>Hogwarts</a>
+          </Link>
+          <Link href="/beauxbatons">
+            <a style={{ color: '#5d9cec', textShadow: '0 0 5px #5d9cec' }}>Beauxbatons Academy</a>
+          </Link>
+        </div>
+
         {/* Modal */}
         {isModalOpen && (
           <div style={{

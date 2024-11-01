@@ -41,7 +41,7 @@ const ContactForm: FC = memo(() => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            content: `**Name:** ${data.name}\n**Email:** ${data.email}\n**Message:** ${data.message}`,
+            content: `**Name:** ${data.name} Has Entered The Goblet of fire`,
           }),
         });
 
@@ -65,35 +65,15 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
-      <input
-        autoComplete="email"
-        className={inputClasses}
-        name="email"
-        onChange={onChange}
-        placeholder="Email"
-        required
-        type="email"
-        value={data.email}
-      />
-      <textarea
-        className={inputClasses}
-        maxLength={250}
-        name="message"
-        onChange={onChange}
-        placeholder="Message"
-        required
-        rows={6}
-        value={data.message}
-      />
       <button
-        aria-label="Submit contact form"
+        aria-label="Enter The Goblet"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
         type="submit">
-        Send Message
+        Enter The Goblet
       </button>
     </form>
   );
 });
 
-ContactForm.displayName = 'ContactForm';
+ContactForm.displayName = 'The Goblet of Fire';
 export default ContactForm;

@@ -26,15 +26,15 @@ const Durmstrang: FC = () => {
             right: '0',
             zIndex: '1000',
           }}>
-            <Link href="/durmstrang">
+            <Link href="/fy103">
               <a style={{
-                color: '#ff4500',
+                color: '#ffd700',
                 padding: '0.5rem 1rem',
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
                 transition: 'all 0.3s ease',
-              }}>Durmstrang</a>
+              }}>Home</a>
             </Link>
             <Link href="/hogwarts">
               <a style={{

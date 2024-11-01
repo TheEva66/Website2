@@ -36,7 +36,7 @@ const Hogwarts: FC = () => {
                 transition: 'all 0.3s ease',
               }}>Durmstrang</a>
             </Link>
-            <Link href="/hogwarts">
+            <Link href="/fy103">
               <a style={{
                 color: '#ffd700',
                 padding: '0.5rem 1rem',
@@ -44,7 +44,7 @@ const Hogwarts: FC = () => {
                 fontWeight: 'bold',
                 textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
                 transition: 'all 0.3s ease',
-              }}>Hogwarts</a>
+              }}>Home</a>
             </Link>
             <Link href="/beauxbatons">
               <a style={{

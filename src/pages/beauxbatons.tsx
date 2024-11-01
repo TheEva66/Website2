@@ -46,15 +46,15 @@ const Beauxbatons: FC = () => {
                 transition: 'all 0.3s ease',
               }}>Hogwarts</a>
             </Link>
-            <Link href="/beauxbatons">
+            <Link href="/fy103">
               <a style={{
-                color: '#5d9cec',
+                color: '#ffd700',
                 padding: '0.5rem 1rem',
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
                 transition: 'all 0.3s ease',
-              }}>Beauxbatons</a>
+              }}>Home</a>
             </Link>
             <Link href="/qr">
               <a style={{

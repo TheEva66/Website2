@@ -51,16 +51,16 @@ const QRPage: React.FC = () => {
           transition: 'all 0.3s ease',
         }}>Beauxbatons</a>
       </Link>
-      <Link href="/qr">
-        <a style={{
-          color: '#ffffff',
-          padding: '0.5rem 1rem',
-          textDecoration: 'none',
-          fontWeight: 'bold',
-          textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
-          transition: 'all 0.3s ease',
-        }}>QR Code</a>
-      </Link>
+      <Link href="/fy103">
+              <a style={{
+                color: '#ffd700',
+                padding: '0.5rem 1rem',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s ease',
+              }}>Home</a>
+            </Link>
       </nav>
     <div style={styles.container}>
       <img

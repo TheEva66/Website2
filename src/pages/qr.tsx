@@ -6,6 +6,7 @@ const QRPage: React.FC = () => {
   };
 
   return (
+    <span>
     <nav style={{
       display: 'flex',
       justifyContent: 'center',
@@ -70,6 +71,7 @@ const QRPage: React.FC = () => {
         Start The Show!
       </button>
     </div>
+    </span>
   );
 };
 

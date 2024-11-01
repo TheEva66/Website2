@@ -65,14 +65,13 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
-      <input
-        autoComplete="Year"
+      <textarea
         className={inputClasses}
+        maxLength={250}
         name="Year"
         onChange={onChange}
         placeholder="Year"
-        required
-        type ="text"
+        rows={1}
         value={data.email}
       />
       <textarea

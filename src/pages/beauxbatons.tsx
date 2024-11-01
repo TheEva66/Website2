@@ -48,7 +48,7 @@ const Beauxbatons: FC = () => {
             </Link>
             <Link href="/fy103">
               <a style={{
-                color: '#ffd700',
+                color: '#00ff00',
                 padding: '0.5rem 1rem',
                 textDecoration: 'none',
                 fontWeight: 'bold',

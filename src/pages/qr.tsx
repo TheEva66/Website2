@@ -6,6 +6,60 @@ const QRPage: React.FC = () => {
   };
 
   return (
+          /* Navigation Menu Bar */
+          <nav style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            padding: '1rem 0',
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            borderRadius: '12px',
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            right: '0',
+            zIndex: '1000',
+          }}>
+            <Link href="/durmstrang">
+              <a style={{
+                color: '#ff4500',
+                padding: '0.5rem 1rem',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s ease',
+              }}>Durmstrang</a>
+            </Link>
+            <Link href="/hogwarts">
+              <a style={{
+                color: '#ffd700',
+                padding: '0.5rem 1rem',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s ease',
+              }}>Hogwarts</a>
+            </Link>
+            <Link href="/beauxbatons">
+              <a style={{
+                color: '#5d9cec',
+                padding: '0.5rem 1rem',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s ease',
+              }}>Beauxbatons</a>
+            </Link>
+            <Link href="/qr">
+              <a style={{
+                color: '#ffffff',
+                padding: '0.5rem 1rem',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s ease',
+              }}>QR Code</a>
+            </Link>
     <div style={styles.container}>
       <img
         src="/images/fy103-qr.png"

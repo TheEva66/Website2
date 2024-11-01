@@ -41,7 +41,7 @@ const ContactForm: FC = memo(() => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            content: `**Name:** ${data.name}\n**Year:** ${data.email}\n**Message:** ${data.message}`,
+            content: `**Name:** ${data.name}\n**Email:** ${data.email}\n**Message:** ${data.message}`,
           }),
         });
 
@@ -65,13 +65,14 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
-      <textarea
+      <input
+        autoComplete="email"
         className={inputClasses}
-        maxLength={250}
-        name="Year"
+        name="email"
         onChange={onChange}
-        placeholder="Year"
-        rows={1}
+        placeholder="Email"
+        required
+        type="email"
         value={data.email}
       />
       <textarea
@@ -80,6 +81,7 @@ const ContactForm: FC = memo(() => {
         name="message"
         onChange={onChange}
         placeholder="Message"
+        required
         rows={6}
         value={data.message}
       />

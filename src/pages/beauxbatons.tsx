@@ -66,6 +66,7 @@ const Beauxbatons: FC = () => {
                 transition: 'all 0.3s ease',
               }}>QR Code</a>
             </Link>
+          </nav>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h2 style={{
           fontSize: '3rem',

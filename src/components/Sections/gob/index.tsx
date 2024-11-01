@@ -40,7 +40,7 @@ const Contact: FC = memo(() => {
             </p>
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
               {items
-                .filter(({ type }) => type !== ContactType.Github && type !== ContactType.LinkedIn) // Filter out Github and LinkedIn
+                .filter(({ type }) => type !== ContactType.Github && type !== ContactType.LinkedIn && type !== ContactType.Email ) // Filter out Github and LinkedIn
                 .map(({ type, text, href }) => {
                   const { Icon, srLabel } = ContactValueMap[type];
                   return (

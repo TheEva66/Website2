@@ -41,7 +41,7 @@ const ContactForm: FC = memo(() => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            content: `**Name:** ${data.name} Has Entered The Goblet of fire`,
+            content: `** ${data.name} Has Entered The Goblet of fire **`,
           }),
         });
 

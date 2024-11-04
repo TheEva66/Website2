@@ -180,7 +180,7 @@ const GobletOfFire: FC = memo(() => {
         <p style={{ lineHeight: '1.5', fontSize: '1rem', color: '#f5e5c0' }}>
           "The Triwizard Tournament was created 700 years ago to strengthen bonds between <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Hogwarts, Beauxbatons,</span> and <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Durmstrang</span>. Each school selects a champion to compete in three magical tasks. After many failed attempts to revive the tournament due to high risk, our Ministries have finally ensured safety measures. 
           <br /><br />
-          On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>Halloween</span>, the <span style={{ color: '#FFA500', fontWeight: 'bold' }}>Goblet of fire</span> will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons <sub>$25,000</sub></span>. Only students of age—17 or older—are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
+          On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>November 8th</span> at <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>1:30PM</span>, the <span style={{ color: '#FFA500', fontWeight: 'bold' }}>Goblet of fire</span> will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons <sub>$25,000</sub></span>. Only students of age, 17 or older, are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
         </p>
         </div>
 

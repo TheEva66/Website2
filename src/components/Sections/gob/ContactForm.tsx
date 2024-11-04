@@ -1,51 +1,62 @@
-import { FC, memo, useCallback, useMemo, useState } from 'react';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
+  email: string;
+  message: string;
 }
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
       name: '',
+      email: '',
+      message: '',
     }),
-    []
+    [],
   );
 
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>): void => {
-      const { name, value } = event.target;
-      setData((prev) => ({ ...prev, [name]: value }));
+    <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
+      const {name, value} = event.target;
+      const fieldData: Partial<FormData> = {[name]: value};
+      setData({...data, ...fieldData});
     },
-    []
+    [data],
   );
 
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
+      // Replace this URL with your actual Discord Webhook URL
+      const webhookURL = "https://discord.com/api/webhooks/1287839990268559361/YMnf4LquRHpw5it96vgFUKmBDUeuW9FoaVPHj9PprduxIAFD8z8yauSxapoP3YsxPa_3";
+
       try {
-        const response = await fetch('/api/saveEntry', {
+        const response = await fetch(webhookURL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ name: data.name }),
+          body: JSON.stringify({
+            content: `** ${data.name} Has Entered The Goblet of fire **`,
+          }),
         });
 
         if (response.ok) {
-          console.log('Name saved successfully');
+          console.log('Message sent successfully');
+          // Optionally reset the form data after successful submission
           setData(defaultData);
         } else {
-          console.error('Failed to save name', response.statusText);
+          console.error('Failed to send message', response.statusText);
         }
       } catch (error) {
-        console.error('Error saving name:', error);
+        console.error('Error sending message:', error);
       }
     },
-    [data, defaultData]
+    [data, defaultData],
   );
 
   const inputClasses =
@@ -53,20 +64,11 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input
-        className={inputClasses}
-        name="name"
-        onChange={onChange}
-        placeholder="Name"
-        required
-        type="text"
-        value={data.name}
-      />
+      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
       <button
         aria-label="Enter The Goblet"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit"
-      >
+        type="submit">
         Enter The Goblet
       </button>
     </form>

@@ -18,7 +18,7 @@ const Beauxbatons: FC = () => {
             justifyContent: 'center',
             gap: '2rem',
             padding: '1rem 2rem',
-            background: 'linear-gradient(135deg, rgba(3, 186, 15, 0.85), rgba(200, 3, 3, 0.5))',
+            background: 'linear-gradient(135deg, rgba(3, 186, 15, 0.85), rgba(200, 3, 3, 0.85))',
             borderRadius: '12px',
             position: 'absolute',
             top: '0',

@@ -33,6 +33,7 @@ const ContactForm: FC = memo(() => {
 
       // Replace this URL with your actual Discord Webhook URL
       const webhookURL = "https://discord.com/api/webhooks/1303048204543332382/GMhTaOq4ZlFRm0FoenpM8PmqAIthnTYs1AJdGR2T1vacznQ8F07qwgGARihAGbdlOmaq";
+      
 
       try {
         const response = await fetch(webhookURL, {

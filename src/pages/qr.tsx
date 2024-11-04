@@ -13,7 +13,7 @@ const QRPage: React.FC = () => {
             justifyContent: 'center',
             gap: '2rem',
             padding: '1rem 2rem',
-            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5))',
+            background: 'linear-gradient(135deg, rgba(34, 193, 195, 0.85), rgba(253, 187, 45, 0.5))',
             borderRadius: '12px',
             position: 'absolute',
             top: '0',
@@ -21,7 +21,7 @@ const QRPage: React.FC = () => {
             right: '0',
             zIndex: '1000',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
             backdropFilter: 'blur(10px)',
             transition: 'all 0.3s ease-in-out',
             fontSize: '1.1rem',
@@ -29,6 +29,7 @@ const QRPage: React.FC = () => {
             textTransform: 'uppercase',
             letterSpacing: '1px',
           }}>
+
       <Link href="/durmstrang">
         <a style={{
           color: '#ff4500',

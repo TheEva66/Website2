@@ -2,7 +2,7 @@ import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
-  email: string;
+  school: string;
   message: string;
 }
 
@@ -10,7 +10,7 @@ const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
       name: '',
-      email: '',
+      school: '',
       message: '',
     }),
     [],
@@ -41,7 +41,7 @@ const ContactForm: FC = memo(() => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            content: `** ${data.name} Has Entered The Goblet of fire **`,
+            content: `** ${data.name} Has Entered The Goblet of fire for school ${data.school}**`,
           }),
         });
 
@@ -65,6 +65,7 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
+      <input className={inputClasses} name="School" onChange={onChange} placeholder="School" required type="text" value={data.school} />
       <button
         aria-label="Enter The Goblet"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"

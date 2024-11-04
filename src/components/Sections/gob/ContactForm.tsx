@@ -65,7 +65,7 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" value={data.name} />
-      <input className={inputClasses} name="School" onChange={onChange} placeholder="School" required type="text" value={data.school} />
+      <input className={inputClasses} name="school" onChange={onChange} placeholder="School" required type="text" value={data.school} />
       <button
         aria-label="Enter The Goblet"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"

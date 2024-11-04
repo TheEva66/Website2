@@ -22,18 +22,26 @@ const GobletOfFire: FC = memo(() => {
     }}>
       {/* Navigation Menu Bar */}
       <nav style={{
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '2rem',
-        padding: '1rem 0',
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-        borderRadius: '12px',
-        position: 'absolute',
-        top: '0',
-        left: '0',
-        right: '0',
-        zIndex: '1000',
-      }}>
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            padding: '1rem 2rem',
+            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5))',
+            borderRadius: '12px',
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            right: '0',
+            zIndex: '1000',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            backdropFilter: 'blur(10px)',
+            transition: 'all 0.3s ease-in-out',
+            fontSize: '1.1rem',
+            color: '#ffffff',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+          }}>
         <Link href="/durmstrang">
           <a style={{
             color: '#ff4500',
@@ -171,7 +179,7 @@ const GobletOfFire: FC = memo(() => {
         <p style={{ lineHeight: '1.5', fontSize: '1rem', color: '#f5e5c0' }}>
           "The Triwizard Tournament was created 700 years ago to strengthen bonds between <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Hogwarts, Beauxbatons,</span> and <span style={{ color: '#ffb347', fontWeight: 'bold' }}>Durmstrang</span>. Each school selects a champion to compete in three magical tasks. After many failed attempts to revive the tournament due to high risk, our Ministries have finally ensured safety measures. 
           <br /><br />
-          On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>Halloween</span>, the <span style={{ color: '#FFA500', fontWeight: 'bold' }}>Goblet of fire</span> will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons</span>. Only students of age—17 or older—are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
+          On <span style={{ color: '#ffcc66', fontWeight: 'bold' }}>Halloween</span>, the <span style={{ color: '#FFA500', fontWeight: 'bold' }}>Goblet of fire</span> will select champions to vie for the Triwizard Cup and a prize of <span style={{ color: '#ffb347', fontWeight: 'bold' }}>1,000 galleons <sub>$25,000</sub></span>. Only students of age—17 or older—are eligible to enter. Let us welcome our guests warmly and show Hogwarts’ pride as we support our champion!"
         </p>
         </div>
 

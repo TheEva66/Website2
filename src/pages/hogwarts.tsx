@@ -13,18 +13,26 @@ const Hogwarts: FC = () => {
       boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
     }}>
       
-          <nav style={{
+      <nav style={{
             display: 'flex',
             justifyContent: 'center',
             gap: '2rem',
-            padding: '1rem 0',
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            padding: '1rem 2rem',
+            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5))',
             borderRadius: '12px',
             position: 'absolute',
             top: '0',
             left: '0',
             right: '0',
             zIndex: '1000',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            backdropFilter: 'blur(10px)',
+            transition: 'all 0.3s ease-in-out',
+            fontSize: '1.1rem',
+            color: '#ffffff',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
           }}>
             <Link href="/durmstrang">
               <a style={{

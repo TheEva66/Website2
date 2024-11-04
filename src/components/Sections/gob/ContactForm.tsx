@@ -32,7 +32,7 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
 
       // Replace this URL with your actual Discord Webhook URL
-      const webhookURL = "https://discord.com/api/webhooks/1287839990268559361/YMnf4LquRHpw5it96vgFUKmBDUeuW9FoaVPHj9PprduxIAFD8z8yauSxapoP3YsxPa_3";
+      const webhookURL = "https://discord.com/api/webhooks/1303048204543332382/GMhTaOq4ZlFRm0FoenpM8PmqAIthnTYs1AJdGR2T1vacznQ8F07qwgGARihAGbdlOmaq";
 
       try {
         const response = await fetch(webhookURL, {
@@ -41,7 +41,7 @@ const ContactForm: FC = memo(() => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            content: `** ${data.name} Has Entered The Goblet of fire for school ${data.school}**`,
+            content: `** ${data.name} Has Entered The Goblet of fire for ${data.school}**`,
           }),
         });
 

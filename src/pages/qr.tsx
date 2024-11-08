@@ -6,6 +6,10 @@ const QRPage: React.FC = () => {
     window.location.href = 'https://www.evaakselrad.com/fy103';
   };
 
+  const handleCodeButtonClick = () => {
+    window.open('https://drive.google.com/file/d/1on23OG7H2mWMcT9YcaeH5IUGcp1XZzHm/view?usp=sharing', '_blank');
+  };
+
   return (
     <span>
     <nav style={{
@@ -61,16 +65,16 @@ const QRPage: React.FC = () => {
         }}>Beauxbatons</a>
       </Link>
       <Link href="/fy103">
-              <a style={{
-                color: '#00ff00',
-                padding: '0.5rem 1rem',
-                textDecoration: 'none',
-                fontWeight: 'bold',
-                textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
-                transition: 'all 0.3s ease',
-              }}>Home</a>
-            </Link>
-      </nav>
+        <a style={{
+          color: '#00ff00',
+          padding: '0.5rem 1rem',
+          textDecoration: 'none',
+          fontWeight: 'bold',
+          textShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+          transition: 'all 0.3s ease',
+        }}>Home</a>
+      </Link>
+    </nav>
     <div style={styles.container}>
       <img
         src="/images/fy103-qr.png"
@@ -79,6 +83,9 @@ const QRPage: React.FC = () => {
       />
       <button style={styles.button} onClick={handleButtonClick}>
         Start The Show!
+      </button>
+      <button style={styles.button} onClick={handleCodeButtonClick}>
+        View QR Code on Google Drive
       </button>
     </div>
     </span>
@@ -113,51 +120,7 @@ const styles = {
     transition: 'all 0.4s ease',
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)',
-
-    // Define hover and pseudo-elements for a whimsical effect
-    ':hover': {
-      color: '#FF69B4',
-      backgroundColor: '#fff',
-      borderColor: '#FF69B4',
-      boxShadow: '0 8px 15px rgba(0, 0, 0, 0.3)',
-    },
-
-    ':before': {
-      content: "''",
-      position: 'absolute',
-      top: '0',
-      left: '-100%',
-      width: '100%',
-      height: '100%',
-      backgroundColor: '#FF69B4',
-      transition: 'all 0.4s ease',
-      transform: 'skewX(-20deg)',
-      zIndex: -1,
-    },
-
-    ':hover:before': {
-      left: '100%',
-    },
-
-    ':after': {
-      content: "''",
-      position: 'absolute',
-      bottom: '-10px',
-      right: '-10px',
-      width: '50px',
-      height: '50px',
-      backgroundColor: '#FF69B4',
-      borderRadius: '50%',
-      boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
-      transition: 'all 0.3s ease-in-out',
-    },
-
-    ':hover:after': {
-      bottom: '10px',
-      right: '10px',
-      width: '80px',
-      height: '80px',
-    },
+    marginTop: '10px',
   } as React.CSSProperties,
 };
 

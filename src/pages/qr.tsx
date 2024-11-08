@@ -2,9 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const QRPage: React.FC = () => {
-  const handleButtonClick = () => {
-    window.location.href = 'https://www.evaakselrad.com/fy103';
-  };
+  
 
   const handleCodeButtonClick = () => {
     window.open('https://drive.google.com/file/d/1on23OG7H2mWMcT9YcaeH5IUGcp1XZzHm/view?usp=sharing', '_blank');
@@ -81,9 +79,6 @@ const QRPage: React.FC = () => {
         alt="FY103 QR Code"
         style={styles.image}
       />
-      <button style={styles.button} onClick={handleButtonClick}>
-        Start The Show!
-      </button>
       <button style={styles.button} onClick={handleCodeButtonClick}>
         View Code on Google Drive
       </button>

@@ -85,7 +85,7 @@ const QRPage: React.FC = () => {
         Start The Show!
       </button>
       <button style={styles.button} onClick={handleCodeButtonClick}>
-        View QR Code on Google Drive
+        View Code on Google Drive
       </button>
     </div>
     </span>

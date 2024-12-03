@@ -71,7 +71,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a student at <strong className="text-stone-100">Arcadia University</strong>, currently studing
-        <strong className="text-stone-100"> Computer Science</strong> With a focus on cybersecurity.
+        <strong className="text-stone-100"> Computer Science</strong> With a focus on cybersecurity. Hello Professor Macropol :) i added this sentence for the upload assingment have a look around.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing <strong className="text-stone-100">Video Games</strong>,

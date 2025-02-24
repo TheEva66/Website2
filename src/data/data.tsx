@@ -280,7 +280,8 @@ export const experience: TimelineItem[] = [
         The first being Fiddler On The Roof (2024 season)
         and the most recent Bye Bye Birdie (2025 season)
         I am looking forward to working on more productions in the future.
-      </p>
+      </p>)
+  }
 ];
 
 /**

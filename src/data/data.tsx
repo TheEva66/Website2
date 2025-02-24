@@ -71,7 +71,8 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a student at <strong className="text-stone-100">Arcadia University</strong>, currently studing
-        <strong className="text-stone-100"> Computer Science</strong> With a focus on cybersecurity. Hello Professor Macropol :) i added this sentence for the upload assingment have a look around.
+        <strong className="text-stone-100"> Computer Science</strong> With a focus on cybersecurity. I am also the lead lighting designer at <strong className="text-stone-100">Pulse Entertainment</strong>.
+        I have a passion for lighting design and have worked on many productions with <strong className="text-stone-100">Newtown Arts Company and The Ohev Players</strong>. I taught myself Unreal Engine and have created a few projects with it. I am always looking for new opportunities to learn and grow.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing <strong className="text-stone-100">Video Games</strong>,
@@ -242,7 +243,7 @@ export const education: TimelineItem[] = [
     date: 'September 2024 - June 2028',
     location: 'Arcadia University',
     title: 'Bachelor of Science in Computer Science',
-    content: <p>Expected graduation date is 2028. I was a also the recipiant of the <a href="https://www.arcadia.edu/arcadia-university-admissions/financial-aid/aid-for-undergraduates/">Distinguished Presidential Scholarship</a> from Arcadia University</p>,
+    content: <p>Expected graduation date is 2028. I was a also the recipiant of the <a href="https://www.arcadia.edu/arcadia-university-admissions/financial-aid/aid-for-undergraduates/">Distinguished Presidential Scholarship</a> from Arcadia University Aswell as making the Distinguished Deans List for Fall of 2024</p>,
   },
 ];
 

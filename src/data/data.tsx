@@ -272,7 +272,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2022 - Present',
-    location: 'Ohev Shalom
+    location: 'Ohev Shalom',
     title: 'Lead Lighting Designer and Operator',
     content: (
       <p>

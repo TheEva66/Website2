@@ -6,7 +6,6 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
@@ -83,7 +82,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://drive.google.com/file/d/1ZFLsnWf_pPl5sG2DniTdyyHkKZq3tdPs/view',
+      href: 'https://docs.google.com/uc?export=download&id=1l0uq2GHU4BB43p3LbGXO-lqS33dsR8ak',
       text: 'Lighting Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -267,10 +266,21 @@ export const experience: TimelineItem[] = [
       <p>
         I worked for Newtown Arts Company on many productions and was responsable for 
         the lighting, sound, spotlight, projections and many other technical aspects of the show.
-        I was the recipiant of the TODO ADD NAME legacy scholarship. My next show is<a href="https://newtownac.booktix.com/dept/Main/e/TC"> The Crucible</a> In October 2024. I will be running the sound board for this show, aswell as learing the new recently renovated lighting system.
+        I was the recipiant of the legacy scholarship. My next show wasThe Crucible In October 2024. I will be running the sound board for this show, aswell as learing the new recently renovated lighting system.
       </p>
     ),
   },
+  {
+    date: '2022 - Present',
+    location: 'Ohev Shalom
+    title: 'Lead Lighting Designer and Operator',
+    content: (
+      <p>
+        I recently started working at Ohev Shalom as the Lead Lighting Designer and Operator. My responsibilities include designing and operating the lighting for various events and productions. I work closely with the production team to ensure that the lighting enhances the overall experience. I am excited to bring my expertise and creativity to this role and contribute to the success of each event. So far i have been a part of 2 productions at Ohev Shalom
+        The first being Fiddler On The Roof (2024 season)
+        and the most recent Bye Bye Birdie (2025 season)
+        I am looking forward to working on more productions in the future.
+      </p>
 ];
 
 /**
